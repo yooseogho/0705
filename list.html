@@ -11,14 +11,15 @@
   <link rel="stylesheet" href="layout.css">
   <script src="list.js"></script>
   <script>
+    console.log('ffffff')
     $(document).ready(async function(){
       const pageno=getPageno();
       const result=await fetch(pageno);
+      console.log(result);
       if(result===null){
         alert("서버가 응답하지 않습니다.")
-        location.href="index.html";
+        //location.href="index.html";
       }
-      console.log(result);
     });
 
   </script>
